@@ -1,0 +1,233 @@
+/* font import from the google */
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+
+/* setting the global margin ,padding and font style */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Castoro', serif;
+}
+
+/* body stayling start */
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    background: linear-gradient(270deg, #f72585, #b5179e, #7209b7, #560bad, #480ca8, #3a0ca3, #3f37c9, #4361ee, #4895ee, #4cc9f0);
+    background-size: 2000% 2000%;
+    animation: linear-gradient 30s ease infinite;
+  }
+
+  
+  
+ @keyframes linear-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+/* body stayling end */
+/* top alarm image start  */
+.alarm-img{
+    width:150px;
+    height:150px;
+}
+/* top alarm image start  */
+/* alarm main container start */
+.main-cont{
+    width: 60vw;
+    height:75vh;
+    border-radius: 20px;
+    background-color: white ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+/* alarm main container start */
+/* general sellect styling start */
+.select{
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+   
+}
+
+/* general sellect styling end */
+
+/* .alerm-btn{
+    width: 100%;
+    height: 100px;
+} */
+
+
+/* alarm button styling start  */
+.st-alrm-btn{
+   border-radius: 10px;
+   width: 100px;
+   height: 40px;
+}
+/* alarm button styling start  */
+/* styling for the alarm list button start */
+.alarm-div button{
+    padding: 2px 4px ; 
+    border-radius: 10px;
+    font-weight: bold;
+}
+/* styling for the alarm list button end */
+
+/* .alarm-set-time{
+    font-size: 20px;
+} */
+/* general conatier for the hours minute ampm start */
+.cont-opt{
+   
+    height: 100%;
+}
+/* general conatier for the hours minute ampm end */
+
+/* alarms list headin styling start */
+.alarm-hed{
+    width: 100%;
+}
+
+/* alarms list headin styling start */
+/* alarms conatiner stylin start */
+#alarmscont{
+    width: 100%;
+    min-height: 155px;
+    overflow-y: scroll;
+    
+}
+
+/* alarms conatiner stylin end */
+/* hr min ampm container staylin start */
+.sub-cont{
+    
+    width: 100%;
+   
+}
+/* hr min ampm container staylin end */
+/* alarm list stayling  start */
+#alarm-list{
+    list-style: none;
+}
+
+/* alarm list stayling  end */
+/* notification on alarmtime styling start */
+ .notification{
+    width: 200px;
+    height: 200px;
+    background-color:#005dc8;
+    position:absolute;
+    top:40%;
+    left:45%;
+    border-radius:10px;
+     visibility: hidden; 
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    
+} 
+/* notification on alarmtime styling end */
+/* tagline min hr ampm styling start */
+.tagline{
+    font-size: 25px ;
+    font-weight:bold;
+}
+/* tagline min hr ampm styling end */
+
+@media screen and (max-width:1141px) {
+    .main-cont{
+        width: 100vw;
+    }
+    .select{
+        width: 60px;
+        height: 30px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+
+}
+
+/* media queries for the 890 picxel screen screen start */
+
+@media screen and (max-width:706px ){
+    .main-cont{
+        width: 100vw;
+        flex-direction: column !important;
+    }
+
+    .tagline{
+        font-size: 15px !important;
+    }
+
+    .select{
+        width: 50px;
+        height: 25px;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    #alarmscont{
+        margin-left: -50px;
+        
+    }
+
+    .notification{
+       
+        top:40%;
+        left:30%;
+        
+    }
+}
+/* media queries for the 890 picxel screen screen end */
+
+/* media queries for the 450 picxel screen screen start */
+@media screen and (max-width:450px) {
+    .main-cont{
+        width: 100vw;
+        height:90vh ;
+       
+    }
+
+    .tagline{
+        font-size: 10px !important;
+    }
+
+    .select{
+        width: 30px;
+        height: 15px;
+        text-align: center;
+        font-size: 8px;
+    }
+
+    .sub-cont {
+       height: 70px;
+      
+    }
+
+     .st-alrm-btn{
+        border-radius: 10px;
+        width: 50px;
+        height: 50px;
+     } 
+
+     .top-hed p{
+        font-size: 10px;
+      }
+      .top-hed img{
+        width: 50px;
+        height: 50px;
+      }
+
+      #alarmscont{
+        margin-left: -50px;
+        
+    }
+
+    .notification button{
+       
+      width: 100px;
+        
+    }
+}
+/* media queries for the 450 picxel screen screen end */
+
+
